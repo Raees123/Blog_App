@@ -1,0 +1,29 @@
+#bg{
+    background-size: 1800px 900px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.content{
+  float:left;
+  width: 100%;
+  padding:0 0 0 30px;
+  font-size: large;
+  color: green;
+ }
+h1{
+ text-align: center;
+ border-bottom: 1px solid #bbb;
+ padding: 0 0 10px 0;
+}
+
+h2{
+   text-shadow: white 0px 0px 10px;
+}
+
+ #date{
+ color:yellow;
+ font-size:15px;
+ font-style: italic;
+}

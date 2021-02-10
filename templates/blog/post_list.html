@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+ {%extends 'blog/base.html'%}
+ {%block title %}BLOG APP{%endblock%}
+ {%block content%}
+ <h1>Blog App</h1>
+ {%for post in post_list %}
+ <h2> <a href="{{post.get_absolute_url}}">{{post.title}}</a> </h2>
+ <p id='date'>Published on {{post.publish}} by {{post.author|title}}</p>
+ <p id='b'>{{post.body|truncatewords:30|linebreaks}} </p>
+ {%endfor%}
+ {% include 'blog/pagination.html' with page=post_list%}
+ {%endblock%}
